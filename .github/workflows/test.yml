@@ -1,0 +1,10 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: swift test
